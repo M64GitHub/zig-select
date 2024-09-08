@@ -35,6 +35,7 @@ zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
 
 # ----------------- z-select in action ...
 
+# ----- no parameter: lists versions
 ~/ZIG ❯ ./zig-select
 Versions available:
 
@@ -46,6 +47,7 @@ zig-linux-x86_64-0.14.0-dev.2+0884a4341
 Run this utility again with the corresponding version as argument
 to switch version.
 
+# ----- or version as parameter: switch to the version
 ~/ZIG ❯ ./zig-select zig-linux-x86_64-0.12.0
 Using version: zig-linux-x86_64-0.12.0
 Removing current symlink ...
@@ -63,6 +65,7 @@ lrwxrwxrwx  1 m64 m64   48 Sep  8 20:41 current -> /home/m64/ZIG/_downloads/zig-
 drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 -rwxrwxr-x  1 m64 m64 1518 Sep  8 20:38 zig-select
 
+# ----- version as parameter: switch to another version ...
 ~/ZIG ❯ ./zig-select zig-linux-x86_64-0.11.0
 Using version: zig-linux-x86_64-0.11.0
 Removing current symlink ...
