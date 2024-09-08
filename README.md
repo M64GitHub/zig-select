@@ -27,8 +27,9 @@ to switch version.
 ```
 - run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
 
+
 ## Installation / System Setup
-- Download the script and make it executable. The script will manage your installations by creating the following directory structure if it does not exist yet (you can also do this yourself, manually):
+- Download the script, and run it one time to create the following directory structure if it does not exist yet (you can also do this yourself, manually):
 ```
 ~/ZIG
 ~/ZIG/_downloads/
