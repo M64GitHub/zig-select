@@ -18,7 +18,7 @@ In order to achieve flexibility, it works with directory names, at least for now
 ## Usage: List installed- / Switch Versions
 - run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
 ```
-./zig-select
+~/ZIG ❯ zig-select
 Versions available:
 
 zig-linux-x86_64-0.12.0
@@ -56,7 +56,7 @@ zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
 # ----------------- z-select in action ...
 
 # ----- no parameter: lists versions
-~/ZIG ❯ ./zig-select
+~/ZIG ❯ zig-select
 Versions available:
 
 zig-linux-x86_64-0.12.0
@@ -68,7 +68,7 @@ Run this utility again with the corresponding version as argument
 to switch version.
 
 # ----- or version as parameter: switch to the version
-~/ZIG ❯ ./zig-select zig-linux-x86_64-0.12.0
+~/ZIG ❯ zig-select zig-linux-x86_64-0.12.0
 Using version: zig-linux-x86_64-0.12.0
 Removing current symlink ...
 Creating new symlink ...
@@ -86,7 +86,7 @@ drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 -rwxrwxr-x  1 m64 m64 1518 Sep  8 20:38 zig-select
 
 # ----- version as parameter: switch to another version ...
-~/ZIG ❯ ./zig-select zig-linux-x86_64-0.11.0
+~/ZIG ❯ zig-select zig-linux-x86_64-0.11.0
 Using version: zig-linux-x86_64-0.11.0
 Removing current symlink ...
 Creating new symlink ...
@@ -122,11 +122,11 @@ Creating ZIG download directory /home/m64/ZIG/_downloads ...
 
 ZSH users:
 ```
-echo 'export PATH=$PATH:~/ZIG/current' >> ~/.zshrc
+echo 'export PATH=$PATH:~/ZIG/:~/ZIG/current' >> ~/.zshrc
 ```
 BASH Users:
 ```
-echo 'export PATH=$PATH:~/ZIG/current' >> ~/.bashrc
+echo 'export PATH=$PATH:~/ZIG/:~/ZIG/current' >> ~/.bashrc
 ```
 
 - Download or move your zig versions all into the directory `~ZIG/_downloads`.
