@@ -19,14 +19,14 @@ In order to still achieve flexibility, it works with directory names, at least f
 ## TL;DR - it works like this:
 
 ```bash
-# ----------------- the directory structure in ~/ZIG/ :
+# ----------------- the directory structure in ~/ZIG/ (script will create for you, "move" the 'current' symlink):
 ~/ZIG ❯ ls -l
 total 16
 lrwxrwxrwx  1 m64 m64   48 Sep  8 20:42 current -> /home/m64/ZIG/_downloads/zig-linux-x86_64-0.11.0
 drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 -rwxrwxr-x  1 m64 m64 1518 Sep  8 20:38 zig-select
 
-# ----------------- zig versions stored in the _downloads folder of ~/ZIG
+# ----------------- zig versions stored in the _downloads folder of ~/ZIG (copy, extract all versions you want there)
 ~/ZIG ❯ ls -p _downloads
 zig-linux-x86_64-0.11.0/                     zig-linux-x86_64-0.12.0.tar.xz
 zig-linux-x86_64-0.11.0.tar.xz               zig-linux-x86_64-0.14.0-dev.2+0884a4341/
