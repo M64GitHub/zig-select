@@ -13,7 +13,7 @@ In order to achieve flexibility, it works with directory names, at least for now
 
 
 ## Installation / System Setup
-Run the script a first time to create the directories for you:
+- Run the script a first time to create the directories for you:
 ```
 ❯ ./zig-select
 Creating ZIG root directory /home/m64/ZIG ...
@@ -21,7 +21,7 @@ Creating ZIG download directory /home/m64/ZIG/_downloads ...
 ```
 (It is a good idea to store the script in your ~/ZIG folder then. You can copy it to ~/ZIG)
 
-ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
+- ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
 
 ZSH users:
 ```
@@ -32,7 +32,7 @@ BASH Users:
 echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.bashrc
 ```
 
-Download or move your zig versions all into the directory `~ZIG/_downloads`.
+- Download or move your zig versions all into the directory `~ZIG/_downloads`.
 You can leave the tarballs in the _downloads folder, they will not disturb. For example, my directory looks like this:
 ```
 ❯ ls -pd ZIG/_downloads/*
@@ -45,11 +45,12 @@ ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341/
 ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
 ```
 
-Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
+- Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
 
 
-## Usage: List installed- / Switch Versions
-- run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
+## Usage
+### List installed versions
+run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
 ```
 ~/ZIG ❯ zig-select
 Versions available:
@@ -62,8 +63,13 @@ zig-linux-x86_64-0.14.0-dev.2+0884a4341
 Run this utility again with the corresponding version as argument
 to switch version.
 ```
-- run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
 
+### Switch version
+run 
+```
+zig-select zig-linux-x86_64-0.12.0
+```
+to switch to it.
 
 
 ## How it works:
