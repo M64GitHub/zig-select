@@ -1,5 +1,5 @@
 # zig-select
-zig-select is a lightweight version management utility designed to efficiently handle multiple ZIG installations within your home directory. With a focus on simplicity, it ensures your ZIG installations are organized and provides a fast, intuitive way to switch between them.
+zig-select is a lightweight version switching utility designed to efficiently handle multiple ZIG installations within your home directory. With a focus on simplicity, it ensures your ZIG installations are organized and provides a fast, intuitive way to switch between them.
 
 ## About
 
@@ -10,6 +10,7 @@ following prerequisites/directories and modus operandus were chosen.
 
 The script will expect and handle your extracted binary downloads of the zig language in your HOME/ZIG folder.
 In order to achieve flexibility, it works with directory names, at least for now. 
+
 
 ## Installation / System Setup
 - Run the script a first time to create the directories for you:
