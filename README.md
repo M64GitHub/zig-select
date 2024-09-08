@@ -19,6 +19,14 @@ In order to still achieve flexibility, it works with directory names, at least f
 ## TL;DR - it works like this:
 
 ```bash
+~/ZIG ❯ ls -al
+total 16
+drwxrwxr-x  3 m64 m64 4096 Sep  8 20:42 .
+drwxr-x--- 51 m64 m64 4096 Sep  8 20:42 ..
+lrwxrwxrwx  1 m64 m64   48 Sep  8 20:42 current -> /home/m64/ZIG/_downloads/zig-linux-x86_64-0.11.0
+drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
+-rwxrwxr-x  1 m64 m64 1518 Sep  8 20:38 zig-select
+
 ~/ZIG ❯ ls -p _downloads
 zig-linux-x86_64-0.11.0/                     zig-linux-x86_64-0.12.0.tar.xz
 zig-linux-x86_64-0.11.0.tar.xz               zig-linux-x86_64-0.14.0-dev.2+0884a4341/
