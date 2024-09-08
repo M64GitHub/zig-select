@@ -21,10 +21,10 @@ In order to still achieve flexibility, it works with directory names, at least f
 ```bash
 # ----------------- the directory structure in ~/ZIG/
 #                   (script will create for you, and "move" the 'current' symlink):
-~/ZIG ❯ ls -l
+~/ZIG ❯ ls -lp
 total 16
-lrwxrwxrwx  1 m64 m64   48 Sep  8 20:42 current -> /home/m64/ZIG/_downloads/zig-linux-x86_64-0.11.0
-drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
+lrwxrwxrwx  1 m64 m64   48 Sep  8 20:42 current -> /home/m64/ZIG/_downloads/zig-linux-x86_64-0.11.0/
+drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads/
 -rwxrwxr-x  1 m64 m64 1518 Sep  8 20:38 zig-select
 
 # ----------------- zig versions stored in the _downloads folder of ~/ZIG
