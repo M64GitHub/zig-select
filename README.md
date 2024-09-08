@@ -30,13 +30,16 @@ zig-linux-x86_64-0.14.0-dev.2+0884a4341
 
 Run this utility again with the corresponding version as argument
 to switch version.
+
 ~/ZIG ❯ ./zig-select zig-linux-x86_64-0.12.0
 Using version: zig-linux-x86_64-0.12.0
 Removing current symlink ...
 Creating new symlink ...
 done!
+
 ~/ZIG ❯ zig version
 0.12.0
+
 ~/ZIG ❯ ls -al
 total 16
 drwxrwxr-x  3 m64 m64 4096 Sep  8 20:41 .
@@ -50,6 +53,7 @@ Using version: zig-linux-x86_64-0.11.0
 Removing current symlink ...
 Creating new symlink ...
 done!
+
 ~/ZIG ❯ ls -al
 total 16
 drwxrwxr-x  3 m64 m64 4096 Sep  8 20:42 .
