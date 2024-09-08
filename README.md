@@ -13,9 +13,8 @@ verify that yet.
 I wrote this utility mainly for myself, please see the gist [Managing multiple versions of ZIG on your system easily](https://gist.github.com/M64GitHub/6d2e0cedb69edd9041c92e1422d9f6b6) to find out more to why and how the
 following prerequisites, and modus operandus were chosen:  
 
-The script will expect and handle your extracted binary downloads of the zig language for your
-system. In order to still achieve flexibility, it works with directory names, at least
-for now:
+The script will expect and handle your extracted binary downloads of the zig language in your HOME folder.
+In order to still achieve flexibility, it works with directory names, at least for now:
 
 ## TL;DR - it works like this:
 
