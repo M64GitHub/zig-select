@@ -29,12 +29,6 @@ to switch version.
 
 
 ## Installation / System Setup
-- Download the script, and run it one time to create the following directory structure if it does not exist yet (you can also do this yourself, manually):
-```
-~/ZIG
-~/ZIG/_downloads/
-```
-(It is a good idea to store the script in your ~/ZIG folder. You can copy it to ~/ZIG)
 
 - Run the script a first time to create the directories for you:
 ```
@@ -42,6 +36,8 @@ to switch version.
 Creating ZIG root directory /home/m64/ZIG ...
 Creating ZIG download directory /home/m64/ZIG/_downloads ...
 ```
+(It is a good idea to store the script in your ~/ZIG folder. You can copy it to ~/ZIG)
+
 - ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
 
 ZSH users:
