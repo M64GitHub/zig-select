@@ -87,6 +87,7 @@ Creating ZIG root directory /home/m64/ZIG ...
 Creating ZIG download directory /home/m64/ZIG/_downloads ...
 ```
 - ADD to your PATH variable: `$HOME/ZIG/current`.  
+
 ZSH users:
 ```
 echo 'export PATH=$PATH:~/ZIG/current' >> ~/.zshrc
