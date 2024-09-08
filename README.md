@@ -11,22 +11,6 @@ following prerequisites/directories and modus operandus were chosen.
 The script will expect and handle your extracted binary downloads of the zig language in your HOME/ZIG folder.
 In order to achieve flexibility, it works with directory names, at least for now:
 
-## Usage: List installed- / Switch Versions
-- run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
-```
-~/ZIG ❯ zig-select
-Versions available:
-
-zig-linux-x86_64-0.12.0
-zig-linux-x86_64-0.12.0-dev.2536+788a0409a
-zig-linux-x86_64-0.11.0
-zig-linux-x86_64-0.14.0-dev.2+0884a4341
-
-Run this utility again with the corresponding version as argument
-to switch version.
-```
-- run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
-
 
 ## Installation / System Setup
 
@@ -62,6 +46,25 @@ ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341/
 ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
 ```
 - Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
+
+
+## Usage: List installed- / Switch Versions
+- run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
+```
+~/ZIG ❯ zig-select
+Versions available:
+
+zig-linux-x86_64-0.12.0
+zig-linux-x86_64-0.12.0-dev.2536+788a0409a
+zig-linux-x86_64-0.11.0
+zig-linux-x86_64-0.14.0-dev.2+0884a4341
+
+Run this utility again with the corresponding version as argument
+to switch version.
+```
+- run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
+
+
 
 ## Technical Summary or TL/DR; it works like this:
 
