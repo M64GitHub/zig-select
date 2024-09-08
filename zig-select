@@ -1,0 +1,74 @@
+#!/bin/bash
+# zig-select - Utility to switch between locally installed zig versions
+# 2024, M64 <mario.a.schallner@gmail.com>
+###############################################################################
+
+ZIG_ROOT="$HOME/ZIG"
+ZIG_DL_PATH="${ZIG_ROOT}/_downloads"
+
+usage() {
+  cat <<EOF
+zig-select - select current zig version
+
+USAGE:
+    zig-select [version-dir]
+EOF
+}
+
+display_versions() {
+	echo "Versions available:"
+	echo
+	cd "${ZIG_DL_PATH}"
+	find . -maxdepth 1 -type d | grep -v -e "^.$" | cut -d '/' -f2
+	cd - > /dev/null
+	echo
+	echo "Run this utility again with the corresponding version as argument"
+	echo "to switch version."
+}
+
+if [ ! -d "${ZIG_ROOT}" ]; then
+	echo "Creating ZIG root directory ${ZIG_ROOT} ..."
+	mkdir "${ZIG_ROOT}"
+	if [ $? -ne 0 ]; then
+		echo "ERROR: Something went wrong, exitting."
+		usage
+		exit 1
+	fi
+fi
+
+if [ ! -d "${ZIG_DL_PATH}" ]; then
+	echo "Creating ZIG download directory ${ZIG_DL_PATH} ..."
+	mkdir "${ZIG_DL_PATH}"
+	if [ $? -ne 0 ]; then
+		echo "ERROR: Something went wrong, exitting."
+		usage
+		exit 1
+	fi
+fi
+
+if [ "$#" -lt 1 ];
+then
+	display_versions
+	exit 0
+fi
+
+USE_VERSION="$1"
+
+echo "Using version: ${USE_VERSION}"
+if [ ! -d "${ZIG_DL_PATH}/${USE_VERSION}" ]; then
+	echo "The directory '${ZIG_DL_PATH}/${USE_VERSION}' does not exist!"
+	exit 2
+fi
+
+if [ -s "${ZIG_ROOT}/current" ]; then
+	echo "Removing current symlink ..."
+	rm "${ZIG_ROOT}/current"
+fi
+
+echo "Creating new symlink ..."
+cd "${ZIG_ROOT}"
+ln -s "${ZIG_DL_PATH}/${USE_VERSION}" current
+
+echo "done!"
+exit 0
+
