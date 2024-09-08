@@ -4,7 +4,7 @@ zig-select is a lightweight version switching utility designed to efficiently ha
 ## About
 
 zig-select is a small utility written in bash to easily switch between different versions of zig. 
-It should work on any GNU/linux or compatible system (not yet verified on MAC/OSX).
+It should work on any *GNU/linux* or compatible system (not yet verified on MAC/OSX).
 I wrote this utility mainly for myself, please see the gist [Managing multiple versions of ZIG on your system easily](https://gist.github.com/M64GitHub/6d2e0cedb69edd9041c92e1422d9f6b6) to find out more to why and how the
 following prerequisites/directories and modus operandus were chosen.  
 
