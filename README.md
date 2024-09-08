@@ -128,7 +128,7 @@ ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
 ```
 - Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
 
-## Listing installed- / Switching Versions
+## Usage: List installed- / Switch Versions
 - run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
 ```
 ./zig-select
