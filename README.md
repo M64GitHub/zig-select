@@ -11,10 +11,25 @@ zig-select is a small utility written in bash to easily switch between different
 It should work on any GNU/linux system. On mac osx in theory it should also work, but I did not
 verify that yet.  
 I wrote this utility mainly for myself, please see the gist [Managing multiple versions of ZIG on your system easily](https://gist.github.com/M64GitHub/6d2e0cedb69edd9041c92e1422d9f6b6) to find out more to why and how the
-following prerequisites, and modus operandus were chosen:  
+following prerequisites, and modus operandus were chosen.  
 
-The script will expect and handle your extracted binary downloads of the zig language in your HOME folder.
-In order to still achieve flexibility, it works with directory names, at least for now:
+The script will expect and handle your extracted binary downloads of the zig language in your HOME/ZIG folder.
+In order to achieve flexibility, it works with directory names, at least for now:
+
+## Usage: List installed- / Switch Versions
+- run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
+```
+./zig-select
+Versions available:
+
+zig-linux-x86_64-0.12.0
+zig-linux-x86_64-0.12.0-dev.2536+788a0409a
+zig-linux-x86_64-0.11.0
+zig-linux-x86_64-0.14.0-dev.2+0884a4341
+
+Run this utility again with the corresponding version as argument
+```
+- run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
 
 ## TL;DR - it works like this:
 
@@ -127,19 +142,3 @@ ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341/
 ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
 ```
 - Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
-
-## Usage: List installed- / Switch Versions
-- run `zig-select` w/o a parameter: it will list your downloaded directories/zig-versions.
-```
-./zig-select
-Versions available:
-
-zig-linux-x86_64-0.12.0
-zig-linux-x86_64-0.12.0-dev.2536+788a0409a
-zig-linux-x86_64-0.11.0
-zig-linux-x86_64-0.14.0-dev.2+0884a4341
-
-Run this utility again with the corresponding version as argument
-```
-- run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
-
