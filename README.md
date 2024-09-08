@@ -72,7 +72,7 @@ zig-select zig-linux-x86_64-0.12.0
 to switch to it.
 
 
-## TL;DR / Technical background - "How it works":
+## TL;DR - "How it works":
 
 ```bash
 # ----------------- the directory structure in ~/ZIG/
