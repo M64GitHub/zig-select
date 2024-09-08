@@ -118,15 +118,15 @@ drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 Creating ZIG root directory /home/m64/ZIG ...
 Creating ZIG download directory /home/m64/ZIG/_downloads ...
 ```
-- ADD to your PATH variable: `$HOME/ZIG/current`.  
+- ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
 
 ZSH users:
 ```
-echo 'export PATH=$PATH:~/ZIG/:~/ZIG/current' >> ~/.zshrc
+echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.zshrc
 ```
 BASH Users:
 ```
-echo 'export PATH=$PATH:~/ZIG/:~/ZIG/current' >> ~/.bashrc
+echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.bashrc
 ```
 
 - Download or move your zig versions all into the directory `~ZIG/_downloads`.
