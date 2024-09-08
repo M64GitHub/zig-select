@@ -1,9 +1,5 @@
 # zig-select
-Small zig version selection utility. zig-select will manage your ZIG installations in 
-your home directory.
-It is written with the focus on being efficient and self explaining, to keep your multiple
-installations of zig in a proper place, and to provide a quick and easy way to switch
-between them.
+zig-select is a lightweight version management utility designed to efficiently handle multiple ZIG installations within your home directory. With a focus on simplicity, it ensures your Zig installations are organized and provides a fast, intuitive way to switch between them.
 
 ## About
 
