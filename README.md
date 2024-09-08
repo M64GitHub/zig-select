@@ -27,7 +27,46 @@ to switch version.
 ```
 - run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
 
-## TL;DR - it works like this:
+## Installation / System Setup
+- Download the script and make it executable. The script will manage your installations by creating the following directory structure if it does not exist yet (you can also do this yourself, manually):
+```
+~/ZIG
+~/ZIG/_downloads/
+```
+(It is a good idea to store the script in your ~/ZIG folder. You can copy it to ~/ZIG)
+
+- Run the script a first time to create the directories for you:
+```
+❯ ./zig-select
+Creating ZIG root directory /home/m64/ZIG ...
+Creating ZIG download directory /home/m64/ZIG/_downloads ...
+```
+- ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
+
+ZSH users:
+```
+echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.zshrc
+```
+BASH Users:
+```
+echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.bashrc
+```
+
+- Download or move your zig versions all into the directory `~ZIG/_downloads`.
+You can leave the tarballs in the _downloads folder, they will not disturb. For example, my directory looks like this:
+```
+❯ ls -pd ZIG/_downloads/*
+ZIG/_downloads/zig-linux-x86_64-0.11.0/
+ZIG/_downloads/zig-linux-x86_64-0.11.0.tar.xz
+ZIG/_downloads/zig-linux-x86_64-0.12.0/
+ZIG/_downloads/zig-linux-x86_64-0.12.0.tar.xz
+ZIG/_downloads/zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
+ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341/
+ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
+```
+- Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
+
+## Technical Summary or TL/DR; it works like this:
 
 ```bash
 # ----------------- the directory structure in ~/ZIG/
@@ -99,42 +138,3 @@ drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 ~/ZIG ❯ zig version
 0.11.0
 ```
-
-## Installation / System Setup
-- Download the script and make it executable. The script will manage your installations by creating the following directory structure if it does not exist yet (you can also do this yourself, manually):
-```
-~/ZIG
-~/ZIG/_downloads/
-```
-(It is a good idea to store the script in your ~/ZIG folder. You can copy it to ~/ZIG)
-
-- Run the script a first time to create the directories for you:
-```
-❯ ./zig-select
-Creating ZIG root directory /home/m64/ZIG ...
-Creating ZIG download directory /home/m64/ZIG/_downloads ...
-```
-- ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
-
-ZSH users:
-```
-echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.zshrc
-```
-BASH Users:
-```
-echo 'export PATH=$PATH:~/ZIG:~/ZIG/current' >> ~/.bashrc
-```
-
-- Download or move your zig versions all into the directory `~ZIG/_downloads`.
-You can leave the tarballs in the _downloads folder, they will not disturb. For example, my directory looks like this:
-```
-❯ ls -pd ZIG/_downloads/*
-ZIG/_downloads/zig-linux-x86_64-0.11.0/
-ZIG/_downloads/zig-linux-x86_64-0.11.0.tar.xz
-ZIG/_downloads/zig-linux-x86_64-0.12.0/
-ZIG/_downloads/zig-linux-x86_64-0.12.0.tar.xz
-ZIG/_downloads/zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
-ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341/
-ZIG/_downloads/zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
-```
-- Any new / old zig version you want to try -> just download the tarball and place it into your `ZIG/_downloads` folder, and extract it there.
