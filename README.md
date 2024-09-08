@@ -20,6 +20,12 @@ for now:
 ## TL;DR - it works like this:
 
 ```bash
+~/ZIG ❯ ls -p _downloads
+zig-linux-x86_64-0.11.0/                     zig-linux-x86_64-0.12.0.tar.xz
+zig-linux-x86_64-0.11.0.tar.xz               zig-linux-x86_64-0.14.0-dev.2+0884a4341/
+zig-linux-x86_64-0.12.0/                     zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
+zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
+
 ~/ZIG ❯ ./zig-select
 Versions available:
 
@@ -64,12 +70,6 @@ drwxrwxr-x  6 m64 m64 4096 Sep  8 16:26 _downloads
 
 ~/ZIG ❯ zig version
 0.11.0
-
-~/ZIG ❯ ls -p _downloads
-zig-linux-x86_64-0.11.0/                     zig-linux-x86_64-0.12.0.tar.xz
-zig-linux-x86_64-0.11.0.tar.xz               zig-linux-x86_64-0.14.0-dev.2+0884a4341/
-zig-linux-x86_64-0.12.0/                     zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
-zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
 ```
 
 ## Installation / System Setup
