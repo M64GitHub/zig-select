@@ -9,8 +9,7 @@ I wrote this utility mainly for myself, please see the gist [Managing multiple v
 following prerequisites/directories and modus operandus were chosen.  
 
 The script will expect and handle your extracted binary downloads of the zig language in your HOME/ZIG folder.
-In order to achieve flexibility, it works with directory names, at least for now:
-
+In order to achieve flexibility, it works with directory names, at least for now. 
 
 ## Installation / System Setup
 - Run the script a first time to create the directories for you:
