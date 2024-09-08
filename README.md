@@ -36,7 +36,7 @@ to switch version.
 Creating ZIG root directory /home/m64/ZIG ...
 Creating ZIG download directory /home/m64/ZIG/_downloads ...
 ```
-(It is a good idea to store the script in your ~/ZIG folder. You can copy it to ~/ZIG)
+(It is a good idea to store the script in your ~/ZIG folder then. You can copy it to ~/ZIG)
 
 - ADD to your PATH variable: `~/ZIG:~/ZIG/current`.  
 
