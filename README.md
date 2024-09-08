@@ -19,7 +19,7 @@ for now:
 
 ## TL;DR - it works like this:
 
-```
+```bash
 ~/ZIG ❯ ./zig-select
 Versions available:
 
