@@ -66,7 +66,7 @@ to switch version.
 
 
 
-## Technical Summary or TL/DR; it works like this:
+## How it works:
 
 ```bash
 # ----------------- the directory structure in ~/ZIG/
@@ -88,9 +88,7 @@ zig-linux-x86_64-0.11.0.tar.xz               zig-linux-x86_64-0.14.0-dev.2+0884a
 zig-linux-x86_64-0.12.0/                     zig-linux-x86_64-0.14.0-dev.2+0884a4341.tar.xz
 zig-linux-x86_64-0.12.0-dev.2536+788a0409a/
 
-# ----------------- z-select in action ...
-
-# ----- no parameter: lists versions
+# ----------------- running script without a parameter: lists versions
 ~/ZIG ❯ zig-select
 Versions available:
 
@@ -102,7 +100,7 @@ zig-linux-x86_64-0.14.0-dev.2+0884a4341
 Run this utility again with the corresponding version as argument
 to switch version.
 
-# ----- or version as parameter: switch to the version
+# ----------------- or with a version as parameter: switch to the version
 ~/ZIG ❯ zig-select zig-linux-x86_64-0.12.0
 Using version: zig-linux-x86_64-0.12.0
 Removing current symlink ...
