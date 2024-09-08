@@ -28,6 +28,7 @@ zig-linux-x86_64-0.11.0
 zig-linux-x86_64-0.14.0-dev.2+0884a4341
 
 Run this utility again with the corresponding version as argument
+to switch version.
 ```
 - run `zig-select zig-linux-x86_64-0.12.0` to switch to it.
 
