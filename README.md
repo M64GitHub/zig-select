@@ -65,7 +65,7 @@ to switch version.
 ```
 
 ### Switch version
-run `zig-select version` 
+run `zig-select version`: with a version as argument
 ```
 zig-select zig-linux-x86_64-0.12.0
 ```
